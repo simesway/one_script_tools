@@ -5,8 +5,8 @@
 #include <fstream>
 using std::cout, std::endl, std::setw, std::setfill, std::string;
 
-string tagdbinfo = "/home/eiber/my-own-programs/tagdb/tagdb-info";
-string tagdbentries = "/home/eiber/my-own-programs/tagdb/tagdb-entries";
+string tagdbinfo = "foo/bar/baz/tagdb-info";
+string tagdbentries = "foo/bar/baz/tagdb-entries";
 
 void printHead(){
     std::ifstream file(tagdbinfo);
