@@ -47,7 +47,7 @@ void appenddb(int argc, char **argv){ // Eintrag hinzufügen
         save_to_file(entries, tagdbentries);
 
         cout << "Entry added!" << endl;
-    }else std::cerr << "Tag and entry required" << endl;
+    }else if(string(argv[1]) == "-a" && argc < 4)std::cerr << "Tag and entry required" << endl;
 }
 
 void findtags(int argc, char **argv){
