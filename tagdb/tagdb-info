@@ -1,0 +1,77 @@
+
+___________________________________________________/\\\___/\\\________
+ __________________________________________________\/\\\__\/\\\________
+  _____/\\\_______________________/\\\\\\\\_________\/\\\__\/\\\________
+   __/\\\\\\\\\\\__/\\\\\\\\\_____/\\\////\\\________\/\\\__\/\\\________
+    _\////\\\////__\////////\\\___\//\\\\\\\\\___/\\\\\\\\\__\/\\\\\\\\\__
+     ____\/\\\________/\\\\\\\\\\___\///////\\\__/\\\////\\\__\/\\\////\\\_
+      ____\/\\\_/\\___/\\\/////\\\___/\\_____\\\_\/\\\__\/\\\__\/\\\__\/\\\_
+       ____\//\\\\\___\//\\\\\\\\/\\_\//\\\\\\\\__\//\\\\\\\/\\_\/\\\\\\\\\__
+        _____\/////_____\////////\//___\////////____\///////\//__\/////////___
+
+
+
+TAGDB - tag database 1.1 (2022 April 20) by Eiber, Simon
+                                            
+github.com/simesway
+
+FIRST USE:  compile via: g++ -std=c++17 tagdb.cpp -o tagdb
+            
+            create directory with files:
+                tagdb.cpp       one-script code
+                tagdb           executable
+                tagdb-entries   file, where the entries are saved
+                tagdb-info      this info/help page
+
+            add alias to .bashrc for easy shell use
+                alias tagdb='/home/foo/bar/tagdb/tagdb'
+                
+Description:
+
+    tagdb is a tag database that manages entries.
+    Every entry has its corresponding tags, that allow the user to build up their own database.
+    Through the use of tags, it's easy to find entries with the same combination of these.
+    tagdb can be used e.g. as a notebook, a small register or as a file box for memorizing stuff.
+
+    
+Usage: tagdb [arguments] [tags] [entry]
+
+    arguments:
+
+        -a         Append-database / add-entry: tagdb -a tag1,tag2,tag3 foo bar baz
+
+        -rm        Removes entry: no further arguments required.
+                   The entries are being deleted during the program run.
+                   The Process can be quitted without deleting an entry.
+
+        -t         Lists all entries containing [tags]: tagdb -t tag1 tag2 tag3
+
+        -ls        Lists all entries to the shell without tags.
+
+        -ll        Lists all entries to the sehll with tags.
+
+        -h         Show information about the usage of tagdb.
+
+
+    tags:
+
+        Used with the program arguments -a and -t
+        At least one tag must be provided
+
+        -a         Tags must be seperated by commata: tag1,tag2,tag3
+
+        -t         Tags must be seperated by white spaces.
+
+
+    entry:
+
+        There are no limitations for the entry.
+        The entry can contain all symbols, digits, white spaces.
+        Note:   <TAB>'s are replaced by a simple space.
+
+
+Feel free to add your own functions and modify the script.
+
+Happy tagging!
+
+
