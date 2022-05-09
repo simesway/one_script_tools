@@ -1,0 +1,2 @@
+compile using Makefile
+png++/png.hpp library required
